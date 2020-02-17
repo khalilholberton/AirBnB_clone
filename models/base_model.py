@@ -7,19 +7,18 @@ from datetime import datetime
 class BaseModel:
     '''that defines all common attributes/methods for other classes'''
     def __init__(self, *args, **kwargs):
-        self.id = str(uuid.uuid4())
-        self.created_at = datetime.now()
-        self.updated_at = datetime.now()
         if kwargs:
             for key, value in kwargs.items():
-                if key == '__class__':
-                    value = self.__class__.__name__
-                elif key == 'created_at':
+                if key == ['created_at']:
                     value = self.created_at.isoformat()
-                elif key == 'updated_at':
+                if key == ['updated_at']:
                     value = self.updated_at.isoformat()
-                else:
+                if key not in ['__class__']:
                     setattr(self, key, value)
+        else:
+            self.id = str(uuid.uuid4())
+            self.created_at = datetime.now()
+            self.updated_at = datetime.now()
 
     def to_dict(self):
         dic = {}
