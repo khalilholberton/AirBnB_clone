@@ -5,8 +5,8 @@ import cmd
 class HBNBCommand(cmd.Cmd):
     """Simple command processor"""
 
-    def do_greet(self, line):
-        print "hello"
+    prompt = "(hbnb)"
+
 
     def do_quit(self, args):
         """exit the program"""
@@ -18,7 +18,7 @@ class HBNBCommand(cmd.Cmd):
         return True
 
     def emptyline(self):
-        """shouldn’t execute anything"""
+        """shouldn t execute anything"""
         pass
 
 if __name__ == '__main__':
