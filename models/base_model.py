@@ -12,15 +12,15 @@ class BaseModel:
         self.updated_at = datetime.now()
 
     def to_dict(self):
-        dic ={}
+        dic = {}
         for key, value in self.__dict__.items():
             if key != 'created_at' and key != 'updated_at':
                 dic[key] = value
-       
+        
         dic['__class__'] = self.__class__.__name__
         dic['created_at'] = self.created_at.isoformat()
         dic['updated_at'] = self.updated_at.isoformat()
-        dic['id'] = self.id
+       
         return dic
     
 
