@@ -14,10 +14,8 @@ class Test_Console(unittest.TestCase):
     def setUp(self):
         '''setup'''
         
-
     def create(self, server=None):
         '''create console'''
         
-
     def test_quit(self):
         '''test quit'''
