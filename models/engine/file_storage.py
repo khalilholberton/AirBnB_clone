@@ -21,10 +21,10 @@ class FileStorage:
         '''save'''
         dic = {}
         for key, value in self.__objects.items():
-            new_dict[key] = value.to_dict()
+            dic[key] = value.to_dict()
         with open(self.__file_path, "w", encoding='utf-8') as f:
             json.dump(dic, f)
-        
+
     def reload(self):
         '''reload'''
         rload = {}
@@ -36,6 +36,3 @@ class FileStorage:
                     self.__objects[key] = ob
         except:
             pass
-                              
-
-            
