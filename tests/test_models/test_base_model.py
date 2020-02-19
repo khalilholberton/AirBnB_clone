@@ -2,31 +2,32 @@
 '''test'''
 import unittest
 import os
-from models.BaseModel import BaseModel
+from models.base_model import BaseModel
 import datetime
+from models import *
 
 
 class TestBaseModel(unittest.TestCase):
     '''Test for BaseModel class '''
     def setUp(self):
         '''set'''
-        self.testbase = BaseModel()
+        self.testbase = BaseModel(1)
 
     def test(self):
         '''test '''
         basemodel = BaseModel(1)
-        self.assertEqual(hasattr(basemodel, "1"))
         self.assertEqual(type(basemodel).__name__, "BaseModel")
+        self.assertFalse(hasattr(basemodel, "1"))
 
     def type(self):
         '''type'''
 
     def test_save(self):
         '''test save'''
-        testbase = self.testbase.updated_at
-        self.testt.save()
+        t = self.testbase.updated_at
+        self.testbase.save()
         testbase_save = self.testbase.updated_at
-        self.assertFalse(testbase == testbase_save)
+        self.assertFalse(t == testbase_save)
 
     def test_to_json(self):
         '''test to jason'''

@@ -15,18 +15,18 @@ class TestCity(unittest.TestCase):
     def test(self):
         '''test '''
         Cityy = City(1)
-        self.assertEqual(hasattr(Cityy, "1"))
         self.assertEqual(type(Cityy).__name__, "City")
+        self.assertFalse(hasattr(Cityy, "1"))
 
     def type(self):
         '''type'''
 
     def test_save(self):
         '''test save'''
-        Cityy = self.Cityy.updated_at
+        c = self.Cityy.updated_at
         self.Cityy.save()
         Cityy_save = self.Cityy.updated_at
-        self.assertFalse(Cityy == Cityy_save)
+        self.assertFalse(c == Cityy_save)
 
     def test_to_json(self):
         '''test to jason'''

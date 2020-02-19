@@ -2,7 +2,7 @@
 '''test'''
 import unittest
 import os
-from models.State import State
+from models.state import State
 import datetime
 
 
@@ -15,18 +15,18 @@ class TestState(unittest.TestCase):
     def test(self):
         '''test '''
         Statee = State(1)
-        self.assertEqual(hasattr(Statee, "1"))
         self.assertEqual(type(Statee).__name__, "State")
+        self.assertFalse(hasattr(Statee, "1"))
 
     def type(self):
         '''type'''
 
     def test_save(self):
         '''test save'''
-        Statee = self.Statee.updated_at
-        self.Staate.save()
+        s = self.Statee.updated_at
+        self.Statee.save()
         State_save = self.Statee.updated_at
-        self.assertFalse(Statee == Statee_save)
+        self.assertFalse(s == State_save)
 
     def test_to_json(self):
         '''test to jason'''
