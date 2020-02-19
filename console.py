@@ -2,11 +2,11 @@
 
 import cmd
 
+
 class HBNBCommand(cmd.Cmd):
     """Simple command processor"""
 
     prompt = "(hbnb)"
-
 
     def do_quit(self, args):
         """exit the program"""
