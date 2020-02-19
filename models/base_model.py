@@ -3,17 +3,19 @@
 import uuid
 from datetime import datetime
 import models
+import json
 
 
 class BaseModel:
     '''that defines all common attributes/methods for other classes'''
     def __init__(self, *args, **kwargs):
+        """init"""
         if kwargs:
             for key, value in kwargs.items():
-                if key == ['created_at']:
-                    value = self.created_at.isoformat()
-                if key == ['updated_at']:
-                    value = self.updated_at.isoformat()
+                if key in ['created_at']:
+                    value = datetime.strptime(value, "%Y-%m-%dT%H:%M:%S.%f")
+                if key in ['updated_at']:
+                    value = datetime.strptime(value, "%Y-%m-%dT%H:%M:%S.%f")
                 if key not in ['__class__']:
                     setattr(self, key, value)
         else:
