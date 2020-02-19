@@ -6,7 +6,7 @@ from models import *
 import datetime
 
 
-class TestAmenity(unittest.TestCase):
+class TestCity(unittest.TestCase):
     '''Test for City s '''
     def setUp(self):
         '''set'''
