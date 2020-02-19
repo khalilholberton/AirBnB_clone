@@ -1,45 +1,52 @@
 #!/usr/bin/python3
-'''test'''
+""" Test State Module """
 import unittest
-import os
 from models.user import User
 import datetime
 
 
 class TestUser(unittest.TestCase):
-    '''Test for User '''
+    """ Unit Tests for User Class """
     def setUp(self):
-        '''set'''
-        self.Userr = User(1)
+        """ Setup instances of the User Class """
+        self.a_inst = User()
+        self.b_inst = User()
+        self.b_inst.save()
 
-    def test(self):
-        '''test '''
-        Userr = User(1)
-        self.assertEqual(type(Userr).__name__, "User")
-        self.assertFalse(hasattr(Userr, "1"))
+    def test_setup(self):
+        """ Tests for creating instances """
+        self.assertTrue(self.a_inst.id != self.b_inst.id)
+        self.assertFalse(hasattr(self.a_inst, "updated_at"))
+        self.assertTrue(hasattr(self.a_inst, "email"))
+        self.assertTrue(hasattr(self.b_inst, "email"))
+        self.assertTrue(hasattr(self.a_inst, "password"))
+        self.assertTrue(hasattr(self.b_inst, "password"))
+        self.assertTrue(hasattr(self.a_inst, "first_name"))
+        self.assertTrue(hasattr(self.b_inst, "first_name"))
+        self.assertTrue(hasattr(self.a_inst, "last_name"))
+        self.assertTrue(hasattr(self.b_inst, "last_name"))
+        self.assertTrue(self.a_inst.created_at != self.b_inst.created_at)
 
-    def type(self):
-        '''type'''
+    def test_types(self):
+        """ Testing for types """
+        self.assertTrue(type(self.a_inst.created_at) is datetime.datetime)
+        self.assertTrue(type(self.a_inst.first_name) is str)
+        self.assertTrue(type(self.b_inst.first_name) is str)
+        self.assertTrue(type(self.a_inst.email) is str)
+        self.assertTrue(type(self.b_inst.email) is str)
+        self.assertTrue(type(self.a_inst.last_name) is str)
+        self.assertTrue(type(self.b_inst.last_name) is str)
+        self.assertTrue(type(self.a_inst.password) is str)
+        self.assertTrue(type(self.b_inst.password) is str)
+        a_json = self.a_inst.to_json()
+        self.assertTrue(type(a_json["created_at"]) is str)
 
     def test_save(self):
-        '''test save'''
-        u = self.Userr.updated_at
-        self.Userr.save()
-        User_save = self.Userr.updated_at
-        self.assertFalse(u == User_save)
-
-    def test_to_json(self):
-        '''test to jason'''
-
-    def test_kwarg(self):
-        Userr = User(name="amine")
-        self.assertEqual(type(Userr).__name__, "User")
-        self.assertFalse(hasattr(Userr, "id"))
-        self.assertFalse(hasattr(Userr, "created_at"))
-        self.assertTrue(hasattr(Userr, "name"))
-        self.assertFalse(hasattr(Userr, "updated_at"))
-        self.assertTrue(hasattr(Userr, "__class__"))
+        """ Testing updating  """
+        b_date = self.b_inst.updated_at
+        self.b_inst.save()
+        b_date2 = self.b_inst.updated_at
+        self.assertTrue(b_date != b_date2)
 
 if __name__ == '__main__':
-    '''no interctve mde'''
     unittest.main()
