@@ -30,6 +30,10 @@ class BaseModel:
             models.storage.new(self)
 
     def to_dict(self):
+        """
+        function to_dict
+        """
+
         dic = {}
         for key, value in self.__dict__.items():
             if key != 'created_at' and key != 'updated_at':
@@ -41,10 +45,15 @@ class BaseModel:
         return dic
 
     def save(self):
+        """
+        fucntion save
+        """
+
         self.updated_at = datetime.now()
         models.storage.new(self)
         models.storage.save()
 
     def __str__(self):
+        """function str""" 
         return "[{}] ({}) {}".format(self.__class__.__name__,
                                      self.id, self.__dict__)
