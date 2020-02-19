@@ -10,9 +10,6 @@ from models.base_model import BaseModel
 from shlex import split
 
 
-
-
-
 class HBNBCommand(cmd.Cmd):
     """Simple command processor"""
 
@@ -71,6 +68,53 @@ class HBNBCommand(cmd.Cmd):
             return
         del data[key]
         storage.save()
+
+    def do_all(self, args):
+        """Prints all string representation of all instances """
+
+        data = storage.all()
+        if len(args) == 0:
+            for my_inst_key, my_inst_object in data.items():
+                print(my_inst_object)
+        else:
+            args = args.split()
+            if args[0] not in self.myclasses:
+                print("** class doesn't exist **")
+            else:
+                mylist = []
+                for my_inst_object in data.values():
+                    if my_inst_object.__class__.__name__ == args[0]:
+                        mylist.append(str(my_inst_object))
+                print(mylist)
+
+    def do_update(self, args):
+        """Updates an instance based on the class name and id """
+
+        args = args.split()
+        data = storage.all()
+
+        if len(args) == 0:
+            print("** class name missing **")
+            return
+        if args[0] not in self.myclasses:
+            print("** class doesn't exist **")
+            return
+        if len(args) == 1:
+            print("** instance id missing **")
+            return
+        if len(args) == 2:
+            print("** attribute name missing **")
+            return
+        if len(args) == 3:
+            print("** value missing **")
+            return
+        key = "{}.{}".format(args[0], args[1])
+        if key in data:
+            try:
+                ob_value = data[key]
+                setattr(ob_value, args[2], args[3])
+            except:
+                print("** no instance found **")
 
     def do_quit(self, args):
         """exit the program"""
