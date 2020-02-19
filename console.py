@@ -10,9 +10,6 @@ from models.base_model import BaseModel
 from shlex import split
 
 
-
-
-
 class HBNBCommand(cmd.Cmd):
     """Simple command processor"""
 
