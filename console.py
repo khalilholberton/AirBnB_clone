@@ -12,6 +12,7 @@ from shlex import split
 
 
 
+
 class HBNBCommand(cmd.Cmd):
     """Simple command processor"""
 
@@ -70,7 +71,6 @@ class HBNBCommand(cmd.Cmd):
             return
         del data[key]
         storage.save()
-
 
     def do_quit(self, args):
         """exit the program"""
