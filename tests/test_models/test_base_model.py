@@ -4,6 +4,7 @@ import unittest
 import os
 from models.base_model import BaseModel
 import datetime
+from models import *
 
 
 class TestBaseModel(unittest.TestCase):
