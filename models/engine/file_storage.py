@@ -3,7 +3,7 @@
 
 
 import json
-import models *
+import models
 from models.base_model import BaseModel
 from datetime import datetime
 
