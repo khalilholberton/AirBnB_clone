@@ -21,7 +21,7 @@ class Test_Console(unittest.TestCase):
     def test_ex(self):
         ''' test quit'''
         exitt = self.create()
-        self.assertTrue(exitt.onecmd("qui"))
+        self.assertTrue(exitt.onecmd("quit"))
 
     def test_end_of_file(self):
         '''test end of file'''
