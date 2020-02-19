@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-'''create class basemodel'''
+'''
+create class basemodel
+'''
 import uuid
 from datetime import datetime
 import models
@@ -7,7 +9,10 @@ import json
 
 
 class BaseModel:
-    '''that defines all common attributes/methods for other classes'''
+    '''
+    that defines all common attributes/methods for other classes
+    '''
+
     def __init__(self, *args, **kwargs):
         """init"""
         if kwargs:
