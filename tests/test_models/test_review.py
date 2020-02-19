@@ -2,7 +2,7 @@
 '''test'''
 import unittest
 import os
-from models.Review import Review
+from models.review import Review
 import datetime
 
 
@@ -15,18 +15,18 @@ class TestReview(unittest.TestCase):
     def test(self):
         '''test '''
         Revieww = Review(1)
-        self.assertEqual(hasattr(Revieww, "1"))
-        self.assertEqual(type(Review).__name__, "Review")
+        self.assertEqual(type(Revieww).__name__, "Review")
+        self.assertFalse(hasattr(Revieww, "1"))
 
     def type(self):
         '''type'''
 
     def test_save(self):
         '''test save'''
-        Revieww = self.Revieww.updated_at
-        self.Reeview.save()
+        r = self.Revieww.updated_at
+        self.Revieww.save()
         Review_save = self.Revieww.updated_at
-        self.assertFalse(Revieww == Review_save)
+        self.assertFalse(r == Review_save)
 
     def test_to_json(self):
         '''test to jason'''

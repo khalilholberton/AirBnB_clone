@@ -2,7 +2,7 @@
 '''test'''
 import unittest
 import os
-from models.User import User
+from models.user import User
 import datetime
 
 
@@ -15,18 +15,18 @@ class TestUser(unittest.TestCase):
     def test(self):
         '''test '''
         Userr = User(1)
-        self.assertEqual(hasattr(Userr, "1"))
         self.assertEqual(type(Userr).__name__, "User")
+        self.assertFalse(hasattr(Userr, "1"))
 
     def type(self):
         '''type'''
 
     def test_save(self):
         '''test save'''
-        Userr = self.User.updated_at
-        self.Useer.save()
-        User_save = self.User.updated_at
-        self.assertFalse(Userr == User_save)
+        u = self.Userr.updated_at
+        self.Userr.save()
+        User_save = self.Userr.updated_at
+        self.assertFalse(u == User_save)
 
     def test_to_json(self):
         '''test to jason'''

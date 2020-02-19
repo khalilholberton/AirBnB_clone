@@ -2,7 +2,7 @@
 '''test'''
 import unittest
 import os
-from models.Place import Place
+from models.place import Place
 import datetime
 
 
@@ -15,18 +15,18 @@ class TestPlace(unittest.TestCase):
     def test(self):
         '''test '''
         Placee = Place(1)
-        self.assertEqual(hasattr(Placee, "1"))
         self.assertEqual(type(Placee).__name__, "Place")
+        self.assertFalse(hasattr(Placee, "1"))
 
     def type(self):
         '''type'''
 
     def test_save(self):
         '''test save'''
-        Placee = self.Placee.updated_at
-        self.Plaace.save()
+        p = self.Placee.updated_at
+        self.Placee.save()
         Place_save = self.Placee.updated_at
-        self.assertFalse(Placee == Place_save)
+        self.assertFalse(p == Place_save)
 
     def test_to_json(self):
         '''test to jason'''

@@ -2,7 +2,7 @@
 '''test'''
 import unittest
 import os
-from models.Amenity import Amenity
+from models.amenity import Amenity
 import datetime
 
 
@@ -15,18 +15,18 @@ class TestAmenity(unittest.TestCase):
     def test(self):
         '''test '''
         Amnity = Amenity(1)
-        self.assertEqual(hasattr(Amnity, "1"))
         self.assertEqual(type(Amnity).__name__, "Amenity")
+        self.assertFalse(hasattr(Amnity, "1"))
 
     def type(self):
         '''type'''
 
     def test_save(self):
         '''test save'''
-        Amnity = self.Amnity.updated_at
-        self.Ammnity.save()
+        Am = self.Amnity.updated_at
+        self.Amnity.save()
         Amnity_save = self.Amnity.updated_at
-        self.assertFalse(Amnity == Amnity_save)
+        self.assertFalse(Am == Amnity_save)
 
     def test_to_json(self):
         '''test to jason'''
