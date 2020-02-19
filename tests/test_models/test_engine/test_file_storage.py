@@ -18,35 +18,26 @@ from models.user import User
 
 
 class Test_FileStorage(unittest.TestCase):
-    
-   ''' tst cases class FileStorage''''
-
-
+    ''' tst cases class FileStorage'''
     def test_docstr(self):
-        '''docstr''''
-        
+        '''docstr'''
 
     def test_pep8(self):
         """Pep8 Test"""
-        
 
     def set_up(self):
         """
         test setup
         """
 
-
     def test_ins(self):
         """Tests for"""
-        
 
     def test_saves_new_instance(self):
         """Tests create """
-        
 
     def test_all(self):
         """test all"""
-        
 
     def test_new(self):
         """test new"""
