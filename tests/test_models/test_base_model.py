@@ -24,7 +24,7 @@ class TestBaseModel(unittest.TestCase):
     def test_save(self):
         '''test save'''
         testbase = self.testbase.updated_at
-        self.test_model1.save()
+        self.testt.save()
         testbase_save = self.testbase.updated_at
         self.assertFalse(testbase == testbase_save)
 
