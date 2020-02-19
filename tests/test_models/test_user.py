@@ -2,7 +2,7 @@
 '''test'''
 import unittest
 import os
-from models import *
+from models.User import User
 import datetime
 
 

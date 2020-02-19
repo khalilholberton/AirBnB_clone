@@ -2,7 +2,7 @@
 '''test'''
 import unittest
 import os
-from models import *
+from models.Amenity import Amenity
 import datetime
 
 
@@ -41,5 +41,5 @@ class TestAmenity(unittest.TestCase):
         self.assertTrue(hasattr(Amnity, "__class__"))
 
 if __name__ == '__main__':
-    '''__name__'''
+    '''no interctive'''
     unittest.main()

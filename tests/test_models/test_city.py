@@ -2,8 +2,8 @@
 '''test'''
 import unittest
 import os
-from models import *
 import datetime
+from models.city import City
 
 
 class TestCity(unittest.TestCase):

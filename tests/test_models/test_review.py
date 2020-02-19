@@ -2,7 +2,7 @@
 '''test'''
 import unittest
 import os
-from models import *
+from models.Review import Review
 import datetime
 
 
