@@ -5,7 +5,6 @@ create class basemodel
 import uuid
 from datetime import datetime
 import models
-import json
 
 
 class BaseModel:
@@ -54,6 +53,6 @@ class BaseModel:
         models.storage.save()
 
     def __str__(self):
-        """function str""" 
+        """function str"""
         return "[{}] ({}) {}".format(self.__class__.__name__,
                                      self.id, self.__dict__)

@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-''' create class to store object'''
+'''
+create class to store object
+'''
 
 
 import json
@@ -10,6 +12,7 @@ from datetime import datetime
 
 class FileStorage:
     ''' class file storage'''
+
     __file_path = "file.json"
     __objects = {}
 
