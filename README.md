@@ -41,7 +41,7 @@ all of our codebase
 How to start it
 ---------------------------------------------------
 cmd: ./console
-
+![console](https://i.imgur.com/Cacz3dg.png)
 how to use it
 ------------------------
 
