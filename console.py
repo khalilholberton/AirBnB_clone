@@ -38,7 +38,8 @@ class HBNBCommand(cmd.Cmd):
             print(token.id)
 
     def do_show(self, args):
-        """do_show"""
+        """Prints the string representation of an instance based
+        on the class name and id"""
 
         args = args.split()
         if not args:
@@ -56,7 +57,8 @@ class HBNBCommand(cmd.Cmd):
                 print("** no instance found **")
 
     def do_destroy(self, args):
-        """do_destroy"""
+        """Deletes an instance based on the class name and id (save the change
+        into the JSON file)."""
 
         args = args.split()
         if not args:
@@ -75,7 +77,8 @@ class HBNBCommand(cmd.Cmd):
         storage.save()
 
     def do_all(self, args):
-        """Prints all string representation of all instances """
+        """Prints all string representation of all instances
+        based or not on the class name.  """
 
         data = storage.all()
         if len(args) == 0:
@@ -93,7 +96,8 @@ class HBNBCommand(cmd.Cmd):
                 print(mylist)
 
     def do_update(self, args):
-        """Updates an instance based on the class name and id """
+        """Updates an instance based on the class name and id by adding
+        or updating attribute (save the change into the JSON file)."""
 
         args = args.split()
         data = storage.all()
