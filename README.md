@@ -76,10 +76,10 @@ how to use it
 (hbnb) destroy <Model_name> <id>
 ```
 
-#### Create Command
+#### Help Command
 
 ```sh
-(hbnb) update <Model_name> <id> <attribute name> <value>
+(hbnb) help
 ```
 
 #### Create Command
