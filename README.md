@@ -92,3 +92,10 @@ how to use it
 ```sh
 (hbnb) quit
 ```
+
+
+#### Written by :
+
+- Khalil Sdiri
+
+- Amine Bouchahda
