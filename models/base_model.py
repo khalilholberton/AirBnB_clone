@@ -45,7 +45,7 @@ class BaseModel:
 
     def save(self):
         """
-        fucntion save
+        Function save
         """
 
         self.updated_at = datetime.now()
