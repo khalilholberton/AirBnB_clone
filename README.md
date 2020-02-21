@@ -33,8 +33,8 @@ a console / command interpreter.
 The first piece is to manipulate a powerful storage
 system,this storage engine will give us
 an abstraction between “My object” and
-“How they are stored and persisted”
-This abstraction will also allow you to
+“How they are stored and persisted”,
+this abstraction will also allow you to
 change the type of storage easily without updating
 all of our codebase
 
