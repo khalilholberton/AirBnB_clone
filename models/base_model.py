@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-this module contain  class BaseModel
+This module contain  class BaseModel
 '''
 import uuid
 from datetime import datetime
