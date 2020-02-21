@@ -128,7 +128,7 @@ class HBNBCommand(cmd.Cmd):
                 print("** no instance found **")
 
     def do_quit(self, args):
-        """exit the program"""
+        """this func exit the program"""
 
         return True
 
