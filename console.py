@@ -137,7 +137,7 @@ class HBNBCommand(cmd.Cmd):
         return True
 
     def emptyline(self):
-        """shouldn t execute anything"""
+        """this func shouldn t execute anything"""
         pass
 
 if __name__ == '__main__':
