@@ -16,7 +16,7 @@ create all classes used for AirBnB
 - Create the first abstracted storage engine of
 the project:File storage.
 - Create all unittests to validate all our classes
-and storage engine
+and storage engine.
 
 Command interpreter:
 ----------------------
