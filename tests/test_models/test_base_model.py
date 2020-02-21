@@ -41,6 +41,21 @@ class TestBaseModel(unittest.TestCase):
         self.assertFalse(hasattr(basemodel, "updated_at"))
         self.assertTrue(hasattr(basemodel, "__class__"))
 
+    def testto_dict(self):
+        '''test right forme if dict'''
+        inst = BaseModel()
+        self.assertTrue(hasattr(inst, "id"))
+        self.assertTrue(hasattr(inst, "created_at"))
+        self.assertTrue(hasattr(inst, "updated_at"))
+        self.assertTrue(hasattr(inst, "__class__"))
+
+    def ___str___(self):
+        '''test format'''
+        inst = BaseModel()
+        self.assertEqual(str(self.inst), "[BaseModel] ({}) {}".
+                         format(self.inst.id, self.inst.__dict__))
+
+
 if __name__ == '__main__':
     '''__name__'''
     unittest.main()
