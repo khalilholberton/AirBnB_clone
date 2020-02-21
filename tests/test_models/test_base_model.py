@@ -50,11 +50,9 @@ class TestBaseModel(unittest.TestCase):
         self.assertTrue(hasattr(inst, "__class__"))
 
     def test_str(self):
-        """
-        Test the return of str
-        """
-        self.assertEqual(str(self.base), "[BaseModel] ({}) {}".
-                         format(self.base.id, self.base.__dict__))
+        '''test str'''
+        self.assertEqual(str(self.testbase), "[BaseModel] ({}) {}".
+                         format(self.testbase.id, self.testbase.__dict__))
 
 
 if __name__ == '__main__':
