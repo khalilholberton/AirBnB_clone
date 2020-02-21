@@ -96,6 +96,6 @@ how to use it
 
 #### Written by :
 
- [Khalil Sdiri](https://github.com/khalilholberton/)
+  - [Khalil Sdiri](https://github.com/khalilholberton/)
 
 - Amine Bouchahda
