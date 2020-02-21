@@ -61,7 +61,7 @@ how to use it
 #### Show Command
 
 ```sh
-(hbnb) (hbnb) show <Model_name> <id>
+(hbnb) show <Model_name> <id>
 ```
 
 #### All Command
@@ -87,7 +87,3 @@ how to use it
 ```sh
 (hbnb) quit
 ```
-
-
-examples
-------------------------------------------
