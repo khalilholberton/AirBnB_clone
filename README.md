@@ -98,4 +98,4 @@ how to use it
 
   - [Khalil Sdiri](https://github.com/khalilholberton/)
 
-- Amine Bouchahda
+  - [Amine Bouchahda](https://github.com/amine784/)
