@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-this module contain the class HBNBCommand
+This module contain the class HBNBCommand
 """
 import cmd
 import json
