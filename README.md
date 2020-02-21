@@ -12,7 +12,7 @@ instances.
 - Create a simple flow of serialization/deserialization:
 Instance <-> Dictionary <-> JSON string <-> file
 create all classes used for AirBnB
-(User, State, City, Place…) that inherit from BaseModel
+(User, State, City, Place…) that inherit from BaseModel.
 - Create the first abstracted storage engine of
 the project:File storage.
 - Create all unittests to validate all our classes
