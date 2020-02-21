@@ -41,17 +41,19 @@ class TestBaseModel(unittest.TestCase):
         self.assertFalse(hasattr(basemodel, "updated_at"))
         self.assertTrue(hasattr(basemodel, "__class__"))
 
-    def testto_dict(self):
+    def test_dict(self):
         '''test right forme if dict'''
-        inst = BaseModel()
-        self.assertTrue(hasattr(inst, "id"))
-        self.assertTrue(hasattr(inst, "created_at"))
-        self.assertTrue(hasattr(inst, "updated_at"))
-        self.assertTrue(hasattr(inst, "__class__"))
+        tes = BaseModel()
+        form = tes.to_dict()
+        self.assertTrue(hasattr(form, '__class__'))
+        self.assertEqual(type(form), dict)
+        self.assertEqual(type(form['created_at']), str)
+        self.assertEqual(type(form['updated_at']), str)
 
-    def test_str(self):
+    def test___str___(self):
         '''test str'''
-        self.assertEqual(str(self.testbase), "[BaseModel] ({}) {}".
+        self.assertEqual(str(self.testbase),
+                         "[BaseModel] ({}) {}".
                          format(self.testbase.id, self.testbase.__dict__))
 
 
