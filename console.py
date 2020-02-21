@@ -23,7 +23,7 @@ class HBNBCommand(cmd.Cmd):
                  "Place", "Review"}
 
     def do_create(self, args):
-        """this func creates new instance of the class BaseModel,
+        """This func creates new instance of the class BaseModel,
         saves it (to JSON file) and prints the id """
 
         if not args:
