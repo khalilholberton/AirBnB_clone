@@ -8,7 +8,7 @@ The tasks to be performed are:
 - Put in place a parent class (called BaseModel)
 to take care of the initialization,
 serialization and deserialization of our future
-instances
+instances.
 - Create a simple flow of serialization/deserialization:
 Instance <-> Dictionary <-> JSON string <-> file
 create all classes used for AirBnB
