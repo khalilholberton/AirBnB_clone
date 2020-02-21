@@ -13,7 +13,7 @@ class BaseModel:
     '''
 
     def __init__(self, *args, **kwargs):
-        """init"""
+        """Function init"""
         if kwargs:
             for key, value in kwargs.items():
                 if key in ['created_at']:
