@@ -38,7 +38,7 @@ class HBNBCommand(cmd.Cmd):
             print(token.id)
 
     def do_show(self, args):
-        """ this func Prints the string representation of an instance based
+        """ This func Prints the string representation of an instance based
         on the class name and id"""
 
         args = args.split()
