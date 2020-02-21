@@ -64,10 +64,10 @@ how to use it
 (hbnb) (hbnb) show <Model_name> <id>
 ```
 
-#### Create Command
+#### All Command
 
 ```sh
-(hbnb) update <Model_name> <id> <attribute name> <value>
+(hbnb) all <Model_name>
 ```
 
 #### Create Command
