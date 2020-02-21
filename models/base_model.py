@@ -30,7 +30,7 @@ class BaseModel:
 
     def to_dict(self):
         """
-        function to_dict
+        Function to_dict
         """
 
         dic = {}
