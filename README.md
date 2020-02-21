@@ -40,7 +40,12 @@ all of our codebase
 
 How to start it
 ---------------------------------------------------
-cmd: ./console
+
+```sh
+$ ./console.py
+```
+
+
 ![console](https://i.imgur.com/Cacz3dg.png)
 
 how to use it
