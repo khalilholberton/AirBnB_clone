@@ -58,10 +58,10 @@ how to use it
 (hbnb) update <Model_name> <id> <attribute name> <value>
 ```
 
-#### Create Command
+#### Show Command
 
 ```sh
-(hbnb) update <Model_name> <id> <attribute name> <value>
+(hbnb) (hbnb) show <Model_name> <id>
 ```
 
 #### Create Command
