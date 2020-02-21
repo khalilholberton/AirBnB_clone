@@ -46,9 +46,9 @@ cmd: ./console
 how to use it
 ------------------------
 
-### Create Command
+###Create Command
 
-``` (hbnb) create <Model_name>
+`(hbnb) create <Model_name>`
 
 ### Update Command
 
