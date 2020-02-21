@@ -30,7 +30,7 @@ The console
 - Manage (create, update, destroy, etc) objects via
 a console / command interpreter.
 - Store and persist objects to a file (JSON file)
-The first piece is to manipulate a powerful storage
+the first piece is to manipulate a powerful storage
 system, this storage engine will give us
 an abstraction between “My object” and
 “How they are stored and persisted”,
