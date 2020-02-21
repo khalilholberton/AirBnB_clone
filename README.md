@@ -46,9 +46,11 @@ cmd: ./console
 how to use it
 ------------------------
 
-###Create Command
+#### Create Command
 
-`(hbnb) create <Model_name>`
+```sh
+(hbnb) update <Model_name> <id> <attribute name> <value>
+```
 
 ### Update Command
 
