@@ -49,11 +49,12 @@ class TestBaseModel(unittest.TestCase):
         self.assertTrue(hasattr(inst, "updated_at"))
         self.assertTrue(hasattr(inst, "__class__"))
 
-    def ___str___(self):
-        '''test format'''
-        inst = BaseModel()
-        self.assertEqual(str(self.inst), "[BaseModel] ({}) {}".
-                         format(self.inst.id, self.inst.__dict__))
+    def test_str(self):
+        """
+        Test the return of str
+        """
+        self.assertEqual(str(self.base), "[BaseModel] ({}) {}".
+                         format(self.base.id, self.base.__dict__))
 
 
 if __name__ == '__main__':
