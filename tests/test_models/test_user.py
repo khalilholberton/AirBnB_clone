@@ -40,6 +40,14 @@ class TestUser(unittest.TestCase):
         self.assertFalse(hasattr(Userr, "updated_at"))
         self.assertTrue(hasattr(Userr, "__class__"))
 
+    def test_pass_name(self):
+        """test user"""
+        self.assertEqual(type(User.email), str)
+        self.assertEqual(type(User.password), str)
+        self.assertEqual(type(User.first_name), str)
+        self.assertEqual(type(User.last_name), str)
+
+
 if __name__ == '__main__':
     '''no interctve mde'''
     unittest.main()
