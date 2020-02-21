@@ -31,7 +31,7 @@ The console
 a console / command interpreter.
 - Store and persist objects to a file (JSON file)
 The first piece is to manipulate a powerful storage
-system,this storage engine will give us
+system, this storage engine will give us
 an abstraction between “My object” and
 “How they are stored and persisted”,
 this abstraction will also allow you to
