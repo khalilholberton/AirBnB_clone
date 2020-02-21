@@ -49,12 +49,44 @@ how to use it
 #### Create Command
 
 ```sh
+(hbnb) create <Model_name>
+```
+
+#### Update Command
+
+```sh
 (hbnb) update <Model_name> <id> <attribute name> <value>
 ```
 
-### Update Command
+#### Create Command
 
-``` (hbnb) update <Model_name> <id> <attribute name> <value>
+```sh
+(hbnb) update <Model_name> <id> <attribute name> <value>
+```
+
+#### Create Command
+
+```sh
+(hbnb) update <Model_name> <id> <attribute name> <value>
+```
+
+#### Create Command
+
+```sh
+(hbnb) update <Model_name> <id> <attribute name> <value>
+```
+
+#### Create Command
+
+```sh
+(hbnb) update <Model_name> <id> <attribute name> <value>
+```
+
+#### Create Command
+
+```sh
+(hbnb) update <Model_name> <id> <attribute name> <value>
+```
 
 
 examples
