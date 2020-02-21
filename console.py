@@ -16,7 +16,7 @@ from shlex import split
 
 
 class HBNBCommand(cmd.Cmd):
-    """This is a Simple command processor"""
+    """This class of a Simple command processor"""
 
     prompt = "(hbnb)"
     myclasses = {"BaseModel", "User", "State", "City", "Amenity",
