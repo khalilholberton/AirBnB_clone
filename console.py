@@ -133,7 +133,7 @@ class HBNBCommand(cmd.Cmd):
         return True
 
     def do_EOF(self, line):
-        """exit the program for EOF signal """
+        """this func exit the program for EOF signal """
         return True
 
     def emptyline(self):
