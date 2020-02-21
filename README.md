@@ -82,10 +82,10 @@ how to use it
 (hbnb) help
 ```
 
-#### Create Command
+#### Quit Command
 
 ```sh
-(hbnb) update <Model_name> <id> <attribute name> <value>
+(hbnb) quit
 ```
 
 
